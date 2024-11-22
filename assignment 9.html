@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 9</title>
+    <style>
+    
+
+    .pos{ position: absolute;
+        left:50%; top:50%; 
+        
+        transform: translate(-50%, -50%)
+  
+      }
+ .main {
+             
+              
+            padding: 20px;
+            text-align: left;
+            width: 500px;
+            background-color: rgb(204, 206, 206);
+            border-radius: 4px;
+            border: none;
+
+        }
+
+        #sub {
+            margin-top: 10px;
+            padding: 10px 30px;
+            background-color: green;
+            color: white;
+            cursor: pointer;
+            border: none;
+            width: 500px;
+            border-radius: 2px;
+        }
+
+        #sub:hover {
+            background-color: rgb(87, 181, 79);}
+           
+ #name1{width: 500px;height: 30px;
+            border-radius: 4px;
+        border: none;}
+#name2{width: 500px;height: 30px;
+            border-radius: 4px;
+        border: none;}
+#option1 {width: 502px;height: 30px;
+            border-radius: 4px;
+        border: none;}
+
+        .dropdown{display: inline-block;
+        
+          
+       }
+
+      .dropdown button{ background-color: rgba(0, 128, 0, 0.833);
+    color: white; padding: 10px 20px; border: none;
+cursor: pointer;}  
+.dropdown a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+.dropdown .content {
+    display: none;
+    position: absolute;
+    background-color: rgb(161, 159, 159);
+    min-width: 150px;
+    box-shadow: 2px 2px 4px rgb(104, 102, 102);
+
+}
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {background-color: rgb(7, 66, 7);}
+.dropdown a:hover { background-color: beige;}
+    </style>
+</head>
+<body>
+    <div class="pos">
+ 
+    <div>
+        <form>
+            <div class="main">
+              <div>Frist Name</div>
+                <div><input type="text" id="name1" placeholder="Your name.."> </div>
+                <div> Last Name</div>
+                <div><input type="text" id="name2" placeholder="Your last name.."> </div>
+            <div>Country</div>
+                <select size="1" id="option1">
+            <option value="country" >australia</option>
+            
+        </select>
+                <div> <input type="submit" id="sub"> </div>
+            </div>
+        </form>
+        <br> <br> <br> <br> <br> <br>
+    </div>
+
+        <div class="dropdown" >
+            <button> Dropdown</button>
+            <div class="content">
+                <a href="">link 1</a>
+                <a href="">link 2</a>
+                <a href="">link 3</a>
+
+            </div>
+            
+
+
+                </ul>
+                
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    
+</body>
+</html>
